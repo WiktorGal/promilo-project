@@ -3,7 +3,7 @@
 1. **Sklonuj repozytorium**
 
 ```bash
-git clone <URL_repozytorium>
+git clone https://github.com/xFeeNee/promilo-project.git
 ```
 
 2. **Zainstaluj zależności**

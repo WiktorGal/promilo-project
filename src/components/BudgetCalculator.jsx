@@ -18,6 +18,17 @@ const BudgetCalculator = () => {
     setResults(bestChoices);
   };
 
+  const alcoholIcons = {
+    Piwo: "🍺",
+    Wódka: "🥃",
+    Whisky: "🥃",
+    Wino: "🍷",
+    Szampan: "🥂",
+    Likier: "🍸",
+    Nalewka: "🍷",
+    Wermut: "🍸",
+  };
+
   return (
     <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
       <h2 className="text-2xl font-bold text-center mb-4">
@@ -47,8 +58,9 @@ const BudgetCalculator = () => {
           <ul className="space-y-2">
             {results.map((item, index) => (
               <li key={index} className="p-2 border rounded-lg bg-gray-100">
-                🥃 {item.name} — {item.totalVolume} ml (
-                {item.totalUnits.toFixed(2)} jednostek alkoholu)
+                {alcoholIcons[item.type] || "🍹"} {item.name} —{" "}
+                {item.totalVolume} ml ({item.totalUnits.toFixed(2)} jednostek
+                alkoholu)
               </li>
             ))}
           </ul>

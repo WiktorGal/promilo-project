@@ -61,8 +61,8 @@ npm run dev
 `import DatabaseSeeder from "./firebase/DatabaseSeeder";`
 `import DuplicateRemover from "./components/DuplicateRemover";`
 
-## <DuplicateRemover /> - służy do usuwania z bazy danych powielonych alkoholi z listy
+## `<DuplicateRemover />` - służy do usuwania z bazy danych powielonych alkoholi z listy
 
-## <DatabaseSeeder /> - dodaje do listy alkohole z pliku seedDatabase.js
+## `<DatabaseSeeder />` - dodaje do listy alkohole z pliku seedDatabase.js
 
 ## Żeby te powyższe funkcje działały trzeba mieć API z firebase
